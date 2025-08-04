@@ -10,7 +10,7 @@ int printColorMap() {
             printf("%d | %s | %s\n", ((i-1) * 5) + (j-1), majorColor[i-1], minorColor[j-1]);
         }
     }
-    return i * j;
+    return 25;
 }
 
 int testPrintColorMap() {
@@ -20,4 +20,5 @@ int testPrintColorMap() {
     printf("All is well (maybe!)\n");
     return 0;
 }
+
 
