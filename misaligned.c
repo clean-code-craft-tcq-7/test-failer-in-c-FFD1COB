@@ -4,11 +4,11 @@
 int printColorMap() {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
-    int i = 1, j = 1;
-    for (i = 1; i < 6; i++) {
-        for (j = 1; j < 6; j++) {
-        
-            printf("%-3d | %-7s | %-7s\n", (i * 6) + j, majorColor[i], minorColor[j]);
+    int i, j, pairNumber = 1;
+    for (i = 0; i < 5; i++) {
+        for (j = 0; j < 5; j++) {
+            printf("%-3d | %-7s | %-7s\n", pairNumber, majorColor[i], minorColor[j]);
+            pairNumber++;
         }
     }
     return 25;
@@ -21,6 +21,7 @@ int testPrintColorMap() {
     printf("All is well (maybe!)\n");
     return 0;
 }
+
 
 
 
