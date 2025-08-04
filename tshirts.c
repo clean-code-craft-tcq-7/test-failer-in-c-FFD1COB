@@ -9,8 +9,9 @@ char size(int cms) {
         sizeName = 'M';
     } else if (cms < 46) {
         sizeName = 'L';
-    }else
+    }else{
         sizeName = 'XL'; 
+    }    
     return sizeName;
 }
 
@@ -25,6 +26,7 @@ int testTshirtSize() {
     printf("All is well (maybe!)\n");
     return 0;
 }
+
 
 
 
