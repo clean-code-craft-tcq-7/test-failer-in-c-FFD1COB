@@ -7,9 +7,10 @@ char size(int cms) {
         sizeName = 'S';
     } else if (cms  < 42 ) {
         sizeName = 'M';
-    } else if (cms >= 42) {
+    } else if (cms < 46) {
         sizeName = 'L';
-    }
+    }else
+        sizeName = 'XL'; 
     return sizeName;
 }
 
@@ -20,8 +21,10 @@ int testTshirtSize() {
     assert(size(40) == 'M');
     assert(size(43) == 'L');
     assert(size(42) == 'L');
+    assert(size(46) == 'XL');
     printf("All is well (maybe!)\n");
     return 0;
 }
+
 
 
