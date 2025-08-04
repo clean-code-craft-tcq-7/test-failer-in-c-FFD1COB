@@ -7,7 +7,8 @@ int printColorMap() {
     int i = 1, j = 1;
     for (i = 1; i < 6; i++) {
         for (j = 1; j < 6; j++) {
-            printf("%d | %s | %s\n", ((i-1) * 5) + (j-1), majorColor[i-1], minorColor[j-1]);
+        
+            printf("%-3d | %-7s | %-7s\n", (i * 5) + j, majorColor[i], minorColor[j]);
         }
     }
     return 25;
@@ -20,5 +21,6 @@ int testPrintColorMap() {
     printf("All is well (maybe!)\n");
     return 0;
 }
+
 
 
